@@ -184,7 +184,9 @@ class Paginator extends \lithium\template\Helper {
 			);
 			
 			if(!empty($this->_library)) {
-				$url['library'] = $this->_library;
+				// Resolved: Illegal string offset 'library'
+				// $url['library'] = $this->_library;
+				$this->_config['library'] = $this->_library;
 			}
 
 			return $this->_config['openTag'].$this->_context->html->link($this->_config['firstText'], $url).$this->_config['closeTag'];
@@ -212,7 +214,9 @@ class Paginator extends \lithium\template\Helper {
 			);
 			
 			if(!empty($this->_library)) {
-				$url['library'] = $this->_library;
+				// Resolved: Illegal string offset 'library'
+				// $url['library'] = $this->_library;
+				$this->_config['library'] = $this->_library;
 			}
 
 			return $this->_config['openTag'].$this->_context->html->link($this->_config['prevText'], $url).$this->_config['closeTag'];
@@ -240,7 +244,9 @@ class Paginator extends \lithium\template\Helper {
 			);
 			
 			if(!empty($this->_library)) {
-				$url['library'] = $this->_library;
+				// Resolved: Illegal string offset 'library'
+				// $url['library'] = $this->_library;
+				$this->_config['library'] = $this->_library;
 			}
 
 			return $this->_config['openTag'].$this->_context->html->link($this->_config['nextText'], $url).$this->_config['closeTag'];
@@ -269,7 +275,9 @@ class Paginator extends \lithium\template\Helper {
 			);
 			
 			if(!empty($this->_library)) {
-				$url['library'] = $this->_library;
+				// Resolved: Illegal string offset 'library'
+				// $url['library'] = $this->_library;
+				$this->_config['library'] = $this->_library;
 			}
 
 			return $this->_config['openTag'].$this->_context->html->link($this->_config['lastText'], $url).$this->_config['closeTag'];
